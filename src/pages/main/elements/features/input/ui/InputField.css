@@ -1,0 +1,29 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: 400px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    padding-left: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background-color: white;
+    color: #D14C7B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+}
+
+.input-field::placeholder {
+    color: #D14C7B;
+    opacity: 0.8;
+}
+
+.input-field:focus {
+    transform: scale(1.05); /* Эффект увеличения при фокусе */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Мягкая тень */
+}
